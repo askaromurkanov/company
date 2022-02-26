@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="815.0" style="-fx-background-color: #263e94;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.company.Controller">
+   <children>
+      <StackPane layoutY="55.0" prefHeight="615.0" prefWidth="815.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Pane fx:id="employees" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TableView fx:id="employeesTable" layoutX="5.0" layoutY="208.0" prefHeight="396.0" prefWidth="807.0">
+                    <columns>
+                      <TableColumn fx:id="fname_col" prefWidth="84.80001831054688" text="Fname" />
+                      <TableColumn fx:id="lname_col" prefWidth="76.79995727539062" text="Lname" />
+                        <TableColumn fx:id="ssn_col" prefWidth="80.00006103515625" text="Ssn" />
+                        <TableColumn fx:id="bdate_col" prefWidth="82.4000244140625" text="Bdate" />
+                        <TableColumn fx:id="address_col" prefWidth="130.4000244140625" text="Address" />
+                        <TableColumn fx:id="sex_col" prefWidth="65.5999755859375" text="Sex" />
+                        <TableColumn fx:id="salary_col" prefWidth="102.4000244140625" text="Salary" />
+                        <TableColumn fx:id="superssn_col" prefWidth="111.9998779296875" text="Super Ssn" />
+                        <TableColumn fx:id="dnum_col" minWidth="0.0" prefWidth="67.79998779296875" text="Dnumber" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="fnameField" layoutX="41.0" layoutY="37.0" promptText="Fname" />
+                  <TextField fx:id="lnameFiled" layoutX="41.0" layoutY="90.0" promptText="Lname" />
+                  <TextField fx:id="ssnField" layoutX="41.0" layoutY="144.0" promptText="Ssn" />
+                  <TextField fx:id="bdateField" layoutX="222.0" layoutY="37.0" promptText="Bdate" />
+                  <TextField fx:id="addressField" layoutX="222.0" layoutY="90.0" promptText="Address" />
+                  <TextField fx:id="sexField" layoutX="222.0" layoutY="144.0" promptText="Sex" />
+                  <TextField fx:id="salaryField" layoutX="408.0" layoutY="37.0" promptText="Salary" />
+                  <TextField fx:id="superssnFiled" layoutX="408.0" layoutY="90.0" promptText="Super Ssn" />
+                  <TextField fx:id="dnumberField" layoutX="408.0" layoutY="144.0" promptText="Dnumber" />
+                  <Button fx:id="addBtn" layoutX="669.0" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Добавить" />
+                  <Button fx:id="updateBtn" layoutX="669.0" layoutY="100.0" mnemonicParsing="false" prefWidth="76.0" text="Изменить" />
+                  <Button fx:id="delBtn" layoutX="669.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Удалить" />
+               </children>
+            </Pane>
+            <Pane fx:id="department" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TableView fx:id="departmentTable" layoutX="5.0" layoutY="208.0" prefHeight="396.0" prefWidth="807.0">
+                     <columns>
+                        <TableColumn fx:id="dname_col" prefWidth="209.60003662109375" text="Dname" />
+                        <TableColumn fx:id="dnumberDep_col" prefWidth="151.199951171875" text="Dnumber" />
+                        <TableColumn fx:id="mgr_ssn_col1" prefWidth="216.0" text="Mgr ssn" />
+                        <TableColumn fx:id="mgrStart_col" prefWidth="229.60003662109375" text="Mgr start date" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="dnameField" layoutX="108.0" layoutY="50.0" promptText="Dname" />
+                  <TextField fx:id="dnumField" layoutX="108.0" layoutY="125.0" promptText="Dnumber" />
+                  <TextField fx:id="mgrssnField" layoutX="356.0" layoutY="50.0" promptText="Mgr ssn" />
+                  <TextField fx:id="mgrstartField" layoutX="356.0" layoutY="125.0" promptText="Mgr start date" />
+                  <Button fx:id="addBtn1" layoutX="583.0" layoutY="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Добавить" />
+                  <Button fx:id="updateBtn1" layoutX="583.0" layoutY="95.0" mnemonicParsing="false" prefWidth="76.0" text="Изменить" />
+                  <Button fx:id="delBtn1" layoutX="583.0" layoutY="145.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Удалить" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Button fx:id="employeesBtn" mnemonicParsing="false" prefHeight="53.0" prefWidth="106.0" style="-fx-background-color: #263e94;" text="Employees" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="departmentBtn" layoutX="106.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="122.0" style="-fx-background-color: #263e94;" text="Department" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
